@@ -217,7 +217,7 @@ document.getElementById('qrbtn').addEventListener('click', function(){
   card.classList.toggle('open');
   if(card.classList.contains('open') && !made){
     try{
-      new QRCode(document.getElementById('qr'), {text: location.href.split('#')[0], width: 200, height: 200, colorDark:'#111111', colorLight:'#ffffff'});
+      new QRCode(document.getElementById('qr'), {text: 'https://aniruddha1295.github.io/ani_links/', width: 200, height: 200, colorDark:'#111111', colorLight:'#ffffff'});
       made = true;
     }catch(e){ card.style.display = 'none'; }
   }
